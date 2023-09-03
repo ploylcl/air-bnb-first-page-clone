@@ -41,13 +41,17 @@ p{
     widtth:320px;
     font-size: 36px;
 }
+.all-card{
+    display:flex;
+    flex-direction: row;
+}
 
-.option{
+.card{
     display:flex;
     flex-direction: column;
     padding:10px 36px;
 }
-.card-image,.card-image2,.card-image3{
+.card-image{
     width: 170px;
     height:auto;
     position: relative;
@@ -56,9 +60,12 @@ p{
 
  .detail{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+   
 }
-
+.gray{
+    color: gray;
+}
 .price{
     font-weight: bolder;
 }
@@ -78,7 +85,7 @@ p{
     border-radius: 5px;
 }
 
-.card-image1 img{
+.card-image img{
     width:170px;
     
 }

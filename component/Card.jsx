@@ -1,25 +1,22 @@
 import React from "react";
 
-export default function Card() {
+export default function Card(probs) {
   return (
-    <section className="start">
-
-        <div className="option">
-            <div className="card-image1">
-            <img src="./image 12.png" />
-            <button class="btn">soldout</button>
+      <section className="all-card">
+        <div className="card">
+            <div className="card-image">
+            <img src={probs.coverImg} />
             </div>
             <div className="rating">
-                <img src="./Star 1.png" />
-                <span>5.0 (6) USA</span>
-            <p>Life lessons with Katie Zaferes</p>
+                <img src="./public/img/Star 1.png" />
+                <span className="gray">{probs.rating} {probs.reviewCount} •</span>
+                <span className="gray"> {probs.country}</span>
             <div className="detail">
-                <p className="price">From $136 </p>
-                <p>/person</p>
+                <p>{probs.title}</p>
+                <p><span className="price" >From ${probs.price}</span> /person</p>
             </div>
             </div>
-      </div>
-
-    </section>
+        </div>
+      </section>
   );
 }
